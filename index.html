@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link href="index.css" rel="stylesheet">
+    <script src="index.js"defer></script>
+</head>
+<body>
+    <nav>
+        <a href="#section1" class="active">Accueil</a>
+        <a href="#section2">profil</a>
+        <a href="#section3">competences</a>
+        <a href="#section4">cv</a>
+        <a href="#section5">projet</a>
+        <a href="#section6">Contact</a>
+    </nav>
+    <main>
+        <section id="section1">
+            <div id="centeranime">
+                <h1>Bienvenue sur mon portfolio Kozlowski Corentin</h1>
+            </div>
+        </section>
+        <section id="section2">
+            <div id="center">
+                <h1>Voici mon profil</h1>
+                <div>
+                    sortant d'une licence web et mobile cherchant toujours a m'ameliorer dans mes projets<br>
+                    Aillant un bts sio option slam
+                </div>
+            </div>
+        </section>
+        <section id="section3">
+            <div id="center">
+                <h1>Voici mes compétences </h1>
+            </div>
+            <div id="competences">
+                <div id="center">
+                    <h2> Langage de programmation + BDD  </h2>
+                </div>
+                <div id="competence">
+                    <img id="logo" src="image/logo/HTML5.png">
+                    <img id="logo" src="image/logo/css.png">
+                    <img id="logo" src="image/logo/JavaScript.png">
+                    <img id="logo" src="image/logo/php.png">
+                    <img id="logo" src="image/logo/java.png">
+                    <img id="logo" src="image/logo/python.png">
+                    <img id="logo" src="image/logo/flutter.png">
+                    <img id="logo" src="image/logo/kotlin.png">
+                    <img id="logo" src="image/logo/nosql.png">
+                    <img id="logo" src="image/logo/sql.png">
+                </div>
+                <div id="center">
+                    <h2> autre </h2>
+                </div>
+                <div id="competence">
+                    <img id="logo" src="image/logo/trello.png">
+                    <img id="logo" src="image/logo/github.png">
+                </div>
+            </div>
+        </section>
+        <section id="section4">
+            <div id="center">
+                <h1>Voici mon Cv</h1> 
+            </div>
+            <p> version pdf </p>
+            <a href="document/pdf/Cv.pdf"><img id="logo"src="image/logo/document.png"></a>
+            <p> version web </p>
+            <a href="cv/cv.html">web </a>
+        </section>
+        <section id="section5">
+            <div id="center">
+                <h1>mes projets </h1> 
+            </div>
+            <h3> Les langages </h3>
+            <img id="logo" src="image/logo/html css js .png"onclick="filterProjects('html-css-js')">
+            <img id="logo" src="image/logo/python.png"onclick="filterProjects('python')">
+            <img id="logo" src="image/logo/java.png"onclick="filterProjects('java')">
+            <img id="logo" src="image/logo/kotlin.png"onclick="filterProjects('kotlin')">
+            <img id="logo" src="image/logo/flutter.png"onclick="filterProjects('flutter')">
+            <h3> les projets </h3>
+            <div class="carousel-container">
+                <button class="carousel-button prev" onclick="scrollCarousel(-1)">&#10094;</button>
+                <div id="projects" class="carousel"></div>
+                <button class="carousel-button next" onclick="scrollCarousel(1)">&#10095;</button>
+            </div>
+        </section>         
+        <section id="section6">
+            <div id="center">
+               <h1>Me contacter</h1>  
+            </div>
+        </section>
+    </main>    
+    <footer>
+        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>    
+</body>
+</html>
