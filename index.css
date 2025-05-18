@@ -176,3 +176,68 @@ footer {
     text-decoration: none;
     cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: static;
+        padding: 10px 0;
+    }
+
+    nav a {
+        margin: 5px;
+        width: auto;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    section {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    #logo {
+        width: 100px;
+        height: auto;
+    }
+
+    .carousel .project {
+        min-width: 150px;
+    }
+
+    .carousel-button {
+        padding: 5px;
+        font-size: 18px;
+    }
+
+    .modal-content {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav a {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    h1, h2, h3 {
+        font-size: 18px;
+    }
+
+    #logo {
+        width: 80px;
+    }
+}
